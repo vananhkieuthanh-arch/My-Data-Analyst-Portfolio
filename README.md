@@ -10,7 +10,7 @@ This portfolio showcases a selection of projects that highlight both my technica
 
 ## Portfolio Projects
 * Power BI & SQL
-    * [Olist Brazilian E-Commerce](https://github.com/vananhkieuthanh-arch/SQL_PowerBI-Olist-Brazilian-E-Commerce-)
+    * [Olist Brazilian E-Commerce](https://github.com/vananhkieuthanh-arch/My-Data-Analyst-Portfolio/tree/1decd99f8fd7fa1a29582c3fb619bc2679ea28f7/Power%20BI%20-%20Olist%20Brazilian%20E-Commerce)
 * Looker Studio & SQL
     * [Travel Booking App](https://github.com/vananhkieuthanh-arch/SQL_LookerStudio-Travel-Booking-App)
 * Excel & Power Query
