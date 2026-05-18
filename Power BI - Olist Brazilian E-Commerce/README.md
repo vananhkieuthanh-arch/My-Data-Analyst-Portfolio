@@ -35,10 +35,10 @@ The data can be downloaded from Kaggle: https://www.kaggle.com/datasets/olistbr/
 ## Dashboard
 Dashboard link: 
 
-![Image Alt](https://github.com/vananhkieuthanh-arch/Olist-Brazilian-E-Commerce-Public/blob/159695f50de6fc91237489c81befdfce6561f4e2/Screenshot/Page%201%20Executive%20Summary.png)
+![Image Alt](https://github.com/vananhkieuthanh-arch/My-Data-Analyst-Portfolio/blob/218d1e34ca2d70dcd17b7bf6894d562bd4928fab/Power%20BI%20-%20Olist%20Brazilian%20E-Commerce/Screenshot/Page%201%20Executive%20Summary.png)
 
-![Image Alt](https://github.com/vananhkieuthanh-arch/Olist-Brazilian-E-Commerce-Public/blob/159695f50de6fc91237489c81befdfce6561f4e2/Screenshot/Page%202%20Sales%20Performance.png)
+![Image Alt](https://github.com/vananhkieuthanh-arch/My-Data-Analyst-Portfolio/blob/218d1e34ca2d70dcd17b7bf6894d562bd4928fab/Power%20BI%20-%20Olist%20Brazilian%20E-Commerce/Screenshot/Page%202%20Sales%20Performance.png)
 
-![Image Alt](https://github.com/vananhkieuthanh-arch/Olist-Brazilian-E-Commerce-Public/blob/159695f50de6fc91237489c81befdfce6561f4e2/Screenshot/Page%203%20Customer%20Review.png)
+![Image Alt](https://github.com/vananhkieuthanh-arch/My-Data-Analyst-Portfolio/blob/218d1e34ca2d70dcd17b7bf6894d562bd4928fab/Power%20BI%20-%20Olist%20Brazilian%20E-Commerce/Screenshot/Page%203%20Customer%20Review.png)
 
-![Image Alt](https://github.com/vananhkieuthanh-arch/Olist-Brazilian-E-Commerce-Public/blob/159695f50de6fc91237489c81befdfce6561f4e2/Screenshot/Page%204%20Delivery%20Review.png)
+![Image Alt](https://github.com/vananhkieuthanh-arch/My-Data-Analyst-Portfolio/blob/218d1e34ca2d70dcd17b7bf6894d562bd4928fab/Power%20BI%20-%20Olist%20Brazilian%20E-Commerce/Screenshot/Page%204%20Delivery%20Review.png)
