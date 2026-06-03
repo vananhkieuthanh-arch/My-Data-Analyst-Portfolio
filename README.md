@@ -36,7 +36,7 @@ Cleaned and analyzed Google Maps listing data for 141 vegan/vegetarian restauran
 
 * Foreign Trade University, HCMC Vietnam: Bachelor of International Business (GPA 3.2/4.0)
 * HackerRank: SQL (Basic + Intermediate + Advanced)
-* Datacamp: SQL, Power BI
+* Datacamp: SQL, Power BI, Python, ETL
 * IELTS: Overall 7.5
 
 ## Contact me
