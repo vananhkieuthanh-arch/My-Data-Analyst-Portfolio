@@ -5,7 +5,7 @@
 **Tools:** 
 - Programming Language: Python
 - Core Libraries: pandas (for loop, def statement, nulls & duplicates handling, outliers removal, customer cohorts, calculated retention metrics, developed an RFM scoring framework, quantile scoring), matplotlib & seaborn (customized heatmap, dual-axis charts, boxplot)
-- Environment:Jupyter Notebook
+- Environment: Jupyter Notebook
 
 **Outputs:**
 Project notebook in .ipynb file format.
