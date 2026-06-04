@@ -6,7 +6,7 @@ My name is Van Anh, a data analyst with experience transforming raw data into ac
 
 My technical toolkit includes SQL, Python, Power Query, Power BI, Looker Studio and Advanced MS office (Excel, Word, Powerpoint).
 
-This portfolio showcases a selection of projects that highlight both my technical skills and analytical thinking. It includes datasets, dashboards, and presentations developed using SQL, Excel, PowerQuery, PowerBI, Looker Studio and Power Point. Each project demonstrates my ability to structure data, uncover insights, and communicate findings in a clear, concise, and visually compelling way.
+This portfolio showcases a selection of projects that highlight both my technical skills and analytical thinking. It includes datasets, dashboards, and presentations developed using SQL, Python, Excel, PowerQuery, PowerBI, Looker Studio and Power Point. Each project demonstrates my ability to structure data, uncover insights, and communicate findings in a clear, concise, and visually compelling way.
 
 ## Portfolio Projects
 * Power BI & SQL
