@@ -32,8 +32,7 @@
 ## Acknowledgements
 The data can be downloaded from Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce.
 
-## Dashboard
-Dashboard link: 
+## Dashboard Image
 
 ![Image Alt](https://github.com/vananhkieuthanh-arch/My-Data-Analyst-Portfolio/blob/218d1e34ca2d70dcd17b7bf6894d562bd4928fab/Power%20BI%20-%20Olist%20Brazilian%20E-Commerce/Screenshot/Page%201%20Executive%20Summary.png)
 
