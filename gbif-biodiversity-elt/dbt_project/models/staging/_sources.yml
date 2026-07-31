@@ -1,0 +1,12 @@
+version: 2
+
+sources: 
+  - name: raw
+    schema: raw
+    tables:
+      - name: gbif_occurrences
+        columns:
+          - name: gbif_key
+            tests:
+              - not_null
+              - unique

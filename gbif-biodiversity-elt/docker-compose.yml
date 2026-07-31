@@ -1,0 +1,86 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: gbif_postgres
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  airflow-webserver:
+    image: apache/airflow:2.9.3
+    container_name: gbif_airflow_webserver
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      # Airflow config setup
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://gbif:gbif@postgres/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__FERNET_KEY: "your-fernet-key-change-me"
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      _PIP_ADDITIONAL_REQUIREMENTS: "requests psycopg psycopg-binary python-dotenv dbt-postgres"
+      DBT_PROFILES_DIR: /opt/airflow/dbt_project
+    ports: 
+      - "8080:8080"
+    volumes:    # link folder on PC to a folder inside the Airflow container
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/requirements.txt:/requirements.txt
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./dbt_project:/opt/airflow/dbt_project
+      - ./.env:/opt/airflow/.env
+    command: webserver
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  airflow-scheduler:
+    image: apache/airflow:2.9.3
+    container_name: gbif_airflow_scheduler
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      # Airflow config setup
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://gbif:gbif@postgres/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__FERNET_KEY: "your-fernet-key-change-me"
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      _PIP_ADDITIONAL_REQUIREMENTS: "requests psycopg psycopg-binary python-dotenv dbt-postgres"
+      DBT_PROFILES_DIR: /opt/airflow/dbt_project
+    volumes:    # link folder on PC to a folder inside the Airflow container
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/requirements.txt:/requirements.txt
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./dbt_project:/opt/airflow/dbt_project
+      - ./.env:/opt/airflow/.env
+    command: scheduler
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

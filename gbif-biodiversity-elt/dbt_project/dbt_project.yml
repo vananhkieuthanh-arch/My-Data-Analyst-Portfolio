@@ -1,0 +1,21 @@
+name: gbif_etl    # Same with DB
+version: 1.0.0
+config-version: 2
+profile: gbif_etl # Same with DB
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+
+models:
+  gbif_etl:   # Project name, Same with DB Name
+    staging:
+      +schema: staging
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
+
+
