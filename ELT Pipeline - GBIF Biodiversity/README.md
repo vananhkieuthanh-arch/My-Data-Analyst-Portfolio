@@ -1,4 +1,4 @@
-# gbif-biodiversity-elt
+# ELT Pipeline - GBIF Biodiversity
 
 End-to-end ELT learning project: extract species occurrence data from the GBIF API, land files, load Postgres (`raw`), transform with dbt (`staging` / `marts`), orchestrate with Airflow.
 
