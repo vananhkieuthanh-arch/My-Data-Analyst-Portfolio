@@ -1,4 +1,0 @@
-requests
-psycopg[binary]
-python-dotenv
-dbt-postgres
